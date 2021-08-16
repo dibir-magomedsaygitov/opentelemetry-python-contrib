@@ -26,7 +26,7 @@ jobs:
         package: ["instrumentation", "exporter", "sdkextension", "propagator"]
         os: [ ubuntu-latest ]
     steps:
-      - name: Checkout Contrib Repo @ SHA - ${{ github.sha }}
+      - name: Checkout Con Repo @ SHA - ${{ github.sha }}
         uses: actions/checkout@v2
       - name: Checkout Core Repo @ SHA - ${{ env.CORE_REPO_SHA }}
         uses: actions/checkout@v2
